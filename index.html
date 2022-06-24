@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro. to Javascript</title>
+    <script>
+        function printContent(el){
+            var restorepage = document.body.innerHTML;g 
+            var printContent = document.getElementById(el).innerHTML;
+            document.body.innerHTML = printContent;
+            window.print();
+            document.body.innerHTML = restorepage;
+        }
+    </script>
+</head>
+<body>
+    <h1>My Page</h1>
+    <div id="div1">Adeniyi Idris Olalekan</div>
+    <button onclick="printContent('div1')">Print Content</button>
+    <div id="div2">5.7ft</div>
+    <button onclick="printContent('div2')">Print Content</button>
+    <div id="div3">Nigeria</div>
+    <button onclick="printContent('div3')">Print Content</button>
+</body>
+</html>
